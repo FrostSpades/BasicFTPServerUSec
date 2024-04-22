@@ -11,10 +11,10 @@ password = "cs4440"
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some parameters.')
-    parser.add_argument('-p', type=int, help='Port Number')
-    parser.add_argument('-dir', type=str, help='Directory location')
-    parser.add_argument('-user', type=str, help='Username')
-    parser.add_argument('-password', type=str, help='Password')
+    parser.add_argument('--port', type=int, help='Port Number')
+    parser.add_argument('--dir', type=str, help='Directory location')
+    parser.add_argument('--user', type=str, help='Username')
+    parser.add_argument('--password', type=str, help='Password')
 
     args = parser.parse_args()
 
