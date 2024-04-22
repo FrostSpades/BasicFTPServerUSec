@@ -32,7 +32,7 @@ def ftp_client():
         ftp.quit()
 
     except Exception as error:
-        print("Error connecting to server:", str(error))
+        print('\033[91m' + "Error connecting to server: " + str(error) + '\033[0m')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some parameters.')

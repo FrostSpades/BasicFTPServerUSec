@@ -45,3 +45,5 @@ if __name__ == "__main__":
 
     if args.password is not None:
         password = args.password
+
+    start_ftp_server()
