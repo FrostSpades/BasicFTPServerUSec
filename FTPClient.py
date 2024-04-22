@@ -30,6 +30,7 @@ def ftp_client():
 
         # Log out and close connection
         ftp.quit()
+
     except Exception as error:
         print("Error connecting to server:", str(error))
 
@@ -70,3 +71,5 @@ if __name__ == "__main__":
     if not args.retr and not args.stor:
         print('\033[91m' + "Error: Please specify either --retr or --stor" + '\033[0m')
         exit(1)
+
+    ftp_client()
