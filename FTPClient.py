@@ -3,7 +3,7 @@
 from ftplib import FTP
 import argparse
 
-FTP_HOST = 'localhost'
+FTP_HOST = '127.0.0.2'
 FTP_PORT = 21
 FTP_USER = 'cs4440'
 FTP_PASSWORD = 'cs4440'

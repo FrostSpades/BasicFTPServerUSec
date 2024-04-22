@@ -5,7 +5,7 @@ from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 
-SERVER_IP = '127.0.0.1'
+SERVER_IP = '127.0.0.2'
 SERVER_PORT = 21
 DIRECTORY_LOCATION = "./"
 username = "cs4440"
@@ -27,6 +27,7 @@ def start_ftp_server():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some parameters.')
+    parser.add_argument('--host', type=str, help='Host IP')
     parser.add_argument('--port', type=int, help='Port Number')
     parser.add_argument('--dir', type=str, help='Directory location')
     parser.add_argument('--user', type=str, help='Username')
@@ -36,6 +37,9 @@ if __name__ == "__main__":
 
     if args.port is not None:
         SERVER_PORT = args.port
+
+    if args.host is not None:
+        SERVER_IP = args.host
 
     if args.dir is not None:
         DIRECTORY_LOCATION = args.dir
