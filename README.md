@@ -3,6 +3,29 @@ This is a basic FTP server and client implementation used for creating packet da
 
 Made for the University of Utah CS 4440 security class.
 
+# Installation
+The release contains two folders. A server folder and a client folder. Each folder holds its associated python file.
+The server and client are separated into different folders to show the behavior of file transfer between the two.
+For example, downloading a file from the server will take the file that is in the server folder and download it into
+the client server.
+## Windows Installation
+Download the zip file with the following link:
+
+[https://github.com/FrostSpades/BasicFTPServerUSec/releases/download/v1.0/FTPServerClientv1.0.zip](https://github.com/FrostSpades/BasicFTPServerUSec/releases/download/v1.0/FTPServerClientv1.0.zip)
+
+Or alternatively, download the zip from this github's release.
+The zip file contains all the associated files described.
+
+## Linux Installation
+Download the zip file with the following command:
+```
+wget https://github.com/FrostSpades/BasicFTPServerUSec/releases/download/v1.0/FTPServerClientv1.0.zip
+```
+Unzip the file with the following command:
+```
+unzip FTPServerClientv1.0
+```
+
 # How to Use
 
 ## Installing pyftpdlib
